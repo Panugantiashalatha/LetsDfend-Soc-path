@@ -1,0 +1,261 @@
+# SOC Fundamentals
+
+## Overview
+
+This repository documents my learning journey through Security Operations Center (SOC) fundamentals. It contains notes, concepts, and practical knowledge gained while studying the core responsibilities of a SOC analyst.
+
+The purpose of this repository is to build a strong foundation before moving on to SIEM, EDR, threat hunting, malware analysis, and incident response.
+
+---
+
+# Topics Covered
+
+## 1. Security Operations Center (SOC)
+
+A Security Operations Center (SOC) is a team responsible for monitoring, detecting, investigating, and responding to cybersecurity incidents.
+
+### Primary Responsibilities
+
+- Monitor security alerts
+- Investigate suspicious activities
+- Detect malicious behavior
+- Respond to security incidents
+- Protect organizational assets
+
+---
+
+## 2. SOC Analyst Responsibilities
+
+A Tier 1 SOC Analyst typically performs:
+
+- Monitoring SIEM alerts
+- Investigating Indicators of Compromise (IOCs)
+- Escalating confirmed incidents
+- Reviewing logs
+- Performing initial triage
+- Documenting findings
+
+---
+
+## 3. Incident Response Lifecycle
+
+The six phases of incident response are:
+
+1. Preparation
+2. Identification
+3. Containment
+4. Eradication
+5. Recovery
+6. Lessons Learned
+
+---
+
+## 4. CIA Triad
+
+The CIA Triad represents the three core principles of information security.
+
+### Confidentiality
+Ensures data is accessible only to authorized users.
+
+Examples:
+- Encryption
+- Multi-factor Authentication
+- Access Control
+
+### Integrity
+Ensures data remains accurate and unmodified.
+
+Examples:
+- Hashing
+- Digital Signatures
+- File Integrity Monitoring
+
+### Availability
+Ensures systems remain operational when needed.
+
+Examples:
+- Backups
+- Load Balancing
+- Disaster Recovery
+
+---
+
+## 5. Indicators of Compromise (IOC)
+
+Indicators of Compromise are forensic artifacts that suggest malicious activity.
+
+Examples:
+
+- Malicious IP addresses
+- File hashes
+- Suspicious domains
+- Registry keys
+- URLs
+- Malware filenames
+
+Example IOC:
+
+MD5 Hash
+
+```
+83e0cfc95de1153d405e839e53d408f5
+```
+
+---
+
+## 6. Indicators of Attack (IOA)
+
+Indicators of Attack identify attacker behavior instead of known malware.
+
+Examples:
+
+- PowerShell downloading payloads
+- Multiple failed login attempts
+- Privilege escalation
+- Credential dumping
+- Lateral movement
+
+Unlike IOCs, IOAs focus on attacker techniques.
+
+---
+
+## 7. SIEM
+
+Security Information and Event Management (SIEM) collects and analyzes logs from multiple sources.
+
+Common SIEM platforms include:
+
+- Splunk
+- Microsoft Sentinel
+- IBM QRadar
+- Elastic Security
+
+SIEM helps analysts:
+
+- Detect attacks
+- Correlate events
+- Investigate incidents
+- Generate alerts
+
+---
+
+## 8. EDR
+
+Endpoint Detection and Response (EDR) monitors endpoint devices for malicious activity.
+
+Popular EDR platforms include:
+
+- Microsoft Defender for Endpoint
+- SentinelOne
+- VMware Carbon Black
+- Trellix Endpoint Security
+
+EDR capabilities:
+
+- Process monitoring
+- Network monitoring
+- Live investigation
+- Threat containment
+- Endpoint isolation
+
+---
+
+## 9. Threat Intelligence
+
+Threat Intelligence provides information about known threats and attacker infrastructure.
+
+Examples:
+
+- Malware hashes
+- Malicious IPs
+- Command-and-Control (C2) servers
+- Domains
+- URLs
+
+Common Threat Intelligence sources:
+
+- VirusTotal
+- Cisco Talos
+- AlienVault OTX
+- AbuseIPDB
+
+---
+
+## 10. False Positive vs True Positive
+
+### True Positive
+
+A security alert that correctly identifies malicious activity.
+
+Example:
+A ransomware executable detected by EDR.
+
+### False Positive
+
+A security alert triggered by legitimate activity.
+
+Example:
+A system administrator using PowerShell for maintenance.
+
+---
+
+## 11. MITRE ATT&CK
+
+MITRE ATT&CK is a knowledge base that documents attacker tactics and techniques.
+
+Example tactics include:
+
+- Initial Access
+- Execution
+- Persistence
+- Privilege Escalation
+- Defense Evasion
+- Credential Access
+- Discovery
+- Lateral Movement
+- Collection
+- Exfiltration
+
+SOC analysts use MITRE ATT&CK to understand attacker behavior and improve detections.
+
+---
+
+# Skills Learned
+
+- Understanding SOC operations
+- Incident response fundamentals
+- SIEM basics
+- EDR basics
+- Threat intelligence fundamentals
+- IOC identification
+- Security monitoring concepts
+- Basic cyber investigation workflow
+
+---
+
+# Learning Resources
+
+- LetsDefend SOC Fundamentals
+- MITRE ATT&CK Framework
+- Cisco Talos Intelligence
+- VirusTotal
+- Microsoft Learn Security Documentation
+
+---
+
+# Next Learning Goals
+
+- Windows Event Logs
+- Splunk Fundamentals
+- Endpoint Detection & Response
+- Malware Analysis
+- Threat Hunting
+- Detection Engineering
+- Digital Forensics
+- SOC Alert Investigation
+
+---
+
+## Disclaimer
+
+This repository is intended for educational purposes and documents my cybersecurity learning journey. It will be updated as I continue studying SOC operations and defensive security.
